@@ -3,12 +3,7 @@
 ## Overview
 AI-based passport validation using Katalon Studio.
 
-
 ## Tools
-
-## Author
-QA Automation Contribution
-
 
 <h2 align="center">## Hi there 👋 I'm Ntambara Rukaka Steven</h2></center>
  <h2 align="center">Unleashing the Digital Future Technology Today!</h2>
@@ -38,7 +33,6 @@ QA Automation Contribution
 - 🤔 Face orientation validation
 - 💬 Clear Image and Photo Control
 
-  
 <img align="right" width="370" height="290" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHpqbzVubXQxemMwcWpoaTVpZWdzdXNhNm03d3VqZ2E3bzhleGZtNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif">
 
   ###⚡What we Do:
@@ -76,7 +70,6 @@ QA Automation Contribution
  - Test Cases Documentation
  - Report the results Requirement analysis
   
-  
 ### 📈 My GitHub Activity
 
 [![Ntambara Rukaka Steven's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Ramjan0487&bg_color=150a10&color=ffffff&line=f5f5f5&point=ffffff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
@@ -104,8 +97,8 @@ Tools Like Katalon Testing Tools
 
  ### ⚙️ Tools I Use
 <p>
-  <img height="50" src="(https://upload.wikimedia.org/wikipedia/commons/0/00/Katalon-logo-png.png)"/>
-  <img height="50" src="(https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Azure_DevOps_icon.svg/640px-Azure_DevOps_icon.svg.png)"/>
+  <img height="50" src="https://upload.wikimedia.org/wikipedia/commons/0/00/Katalon-logo-png.png"/>
+  <img height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Azure_DevOps_icon.svg/640px-Azure_DevOps_icon.svg.png"/>
   <img height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/640px-Octicons-mark-github.svg.png"/>
   <img height="50" src="https://img.icons8.com/dusk/64/000000/anaconda.png"/>
 </p>
@@ -125,9 +118,12 @@ Tools Like Katalon Testing Tools
 - **Operating System**: Mac OS
   ![MacOS]<img height="40" src="https://img.icons8.com/?size=96&id=vCiwbOh7Uo7G&format=png"/>
 - **Operating System**: Linux
-  ![Linux]<img height="40" src="(https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Gnu-linux-distro-logos.svg/640px-Gnu-linux-distro-logos.svg.png)"/>
+  ![Linux]<img height="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Gnu-linux-distro-logos.svg/640px-Gnu-linux-distro-logos.svg.png"/>
 - **Processor**: AMD Ryzen 5 5600H
   ![CPU](https://img.shields.io/badge/AMD-Ryzen_5_5600H-ED1C24?style=for-the-badge&logo=amd&logoColor=white)
 - **Graphics**: AMD Radeon RX 6500M
   ![GPU](https://img.shields.io/badge/AMD-Radeon_RX_6500M-ED1C24?style=for-the-badge&logo=amd&logoColor=white)
-  
+
+  ## Author
+NTAMBARA RUKAKA Steven
+
