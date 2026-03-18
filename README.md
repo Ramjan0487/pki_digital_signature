@@ -98,9 +98,10 @@ Tools Like Katalon Testing Tools
  ### ⚙️ Tools I Use
 <p>
   <img height="50" src="https://upload.wikimedia.org/wikipedia/commons/0/00/Katalon-logo-png.png"/>
-  <img height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Azure_DevOps_icon.png/640px-Azure_DevOps_icon.svg.PNG"/>
-  <img height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/640px-Octicons-mark-github.svg.PNG"/>
-  <img height="50" src="https://img.icons8.com/dusk/64/000000/anaconda.png"/>
+  <img height="50" src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fseeklogo.com%2Fvector-logo%2F319201%2Fselenium&ved=0CBYQjRxqFwoTCOCi79-UqpMDFQAAAAAdAAAAABAI&opi=89978449.png"/>
+  <img height="50" src="https://www.google.com/imgres?q=github%20logo&imgurl=https%3A%2F%2Fcdn-icons-png.flaticon.com%2F256%2F25%2F25231.png&imgrefurl=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fgithub-logo_25231&docid=kHlC0fHCgyWhTM&tbnid=P12DMiIC8KNvzM&vet=12ahUKEwjhjKr9lKqTAxVoK_sDHZn4IBEQnPAOegQIHBAB..i&w=256&h=256&hcb=2&ved=2ahUKEwjhjKr9lKqTAxVoK_sDHZn4IBEQnPAOegQIHBAB.png"/>
+  <img height="50" src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fvh-info.com%2F2025%2F08%2F21%2Fga4-logo%2F&ved=0CBYQjRxqFwoTCICW3dmVqpMDFQAAAAAdAAAAABAI&opi=89978449.png"/>
+<img height="50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRidwGaIWGYMToqhXd1dypaGDsEdPhhbbAz4Q&s"/>
 </p>
 
 ## The Selenium project The primary tools in the suite are: 
@@ -118,7 +119,7 @@ Tools Like Katalon Testing Tools
 - **Operating System**: Mac OS
   ![MacOS]<img height="40" src="https://img.icons8.com/?size=96&id=vCiwbOh7Uo7G&format=png"/>
 - **Operating System**: Linux
-  ![Linux]<img height="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Gnu-linux-distro-logos.svg/640px-Gnu-linux-distro-logos.svg.PNG"/>
+  ![Linux]<img height="40" src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2F1000logos.net%2Flinux-logo%2F&ved=0CBYQjRxqFwoTCOjfubeUqpMDFQAAAAAdAAAAABAH&opi=89978449.png"/>
 - **Processor**: AMD Ryzen 5 5600H
   ![CPU](https://img.shields.io/badge/AMD-Ryzen_5_5600H-ED1C24?style=for-the-badge&logo=amd&logoColor=white)
 - **Graphics**: AMD Radeon RX 6500M
