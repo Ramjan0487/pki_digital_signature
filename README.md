@@ -6,7 +6,7 @@ AI-based passport validation using Katalon Studio.
 ## Tools
 
 <h2 align="center">## Hi there 👋 I'm Ntambara Rukaka Steven</h2></center>
- <h2 align="center">Unleashing the Digital Future Technology Today!</h2>
+ <h2 align="center">Public Key Infrastructure Usage</h2>
 </p>
   <p align="center">
 <img alt="Tests Passing" src="https://github.com/Ramjan0487/github-readme-stats/workflows/Test/badge.svg" style="max-width: 100%;">
@@ -98,8 +98,8 @@ Tools Like Katalon Testing Tools
  ### ⚙️ Tools I Use
 <p>
   <img height="50" src="https://upload.wikimedia.org/wikipedia/commons/0/00/Katalon-logo-png.png"/>
-  <img height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Azure_DevOps_icon.svg/640px-Azure_DevOps_icon.svg.png"/>
-  <img height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/640px-Octicons-mark-github.svg.png"/>
+  <img height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Azure_DevOps_icon.png/640px-Azure_DevOps_icon.svg.PNG"/>
+  <img height="50" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Octicons-mark-github.svg/640px-Octicons-mark-github.svg.PNG"/>
   <img height="50" src="https://img.icons8.com/dusk/64/000000/anaconda.png"/>
 </p>
 
@@ -118,7 +118,7 @@ Tools Like Katalon Testing Tools
 - **Operating System**: Mac OS
   ![MacOS]<img height="40" src="https://img.icons8.com/?size=96&id=vCiwbOh7Uo7G&format=png"/>
 - **Operating System**: Linux
-  ![Linux]<img height="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Gnu-linux-distro-logos.svg/640px-Gnu-linux-distro-logos.svg.png"/>
+  ![Linux]<img height="40" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Gnu-linux-distro-logos.svg/640px-Gnu-linux-distro-logos.svg.PNG"/>
 - **Processor**: AMD Ryzen 5 5600H
   ![CPU](https://img.shields.io/badge/AMD-Ryzen_5_5600H-ED1C24?style=for-the-badge&logo=amd&logoColor=white)
 - **Graphics**: AMD Radeon RX 6500M
