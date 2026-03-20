@@ -1,5 +1,8 @@
 # GovCA Full-Stack Image Validation System
 
+<img align="right" width="370" height="290" src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExMDEzbHZ5ZTA3cHA1Y29xM2g5MWY3eXYyaTFkMnJhbDV3MG5nNWYydiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/l0K4n42JVSqqUvAQg/giphy.gif">
+<img align="right" width="370" height="290" src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExN2Q0N29xMTJ3bjc2eG1ieng1YXJ0d2puMG00enVyNGNvb3c0bDh0bCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qjY1UPzyE2mER9gNbB/giphy.gif">
+
 > Rwanda National Digital Certification Center — https://www.govca.rw/apply/searchIndvdlProductList.sg
 
 A production-ready, fully Dockerised system delivering:
@@ -204,4 +207,4 @@ govca-full/
 | Document Upload | https://www.govca.rw/document/stepIndvdlDocument.sg |
 | Password Reset | https://www.govca.rw/reissue/stepIndvdlReisue.sg |
 | App Status | https://www.govca.rw/indvdl/applyDetails/form/applyInfo.sg |
-| GitHub Repo | https://github.com/your-org/govca-full |
+| GitHub Repo | https://github.com/Ramjan0487/pki_digital_signature |
