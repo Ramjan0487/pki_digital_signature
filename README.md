@@ -1,129 +1,207 @@
-# Passport Image Verification Test Automation
+# GovCA Full-Stack Image Validation System
 
-## Overview
-AI-based passport validation using Katalon Studio.
+> Rwanda National Digital Certification Center — https://www.govca.rw/apply/searchIndvdlProductList.sg
 
-## Tools
+A production-ready, fully Dockerised system delivering:
 
-<h2 align="center">## Hi there 👋 I'm Ntambara Rukaka Steven</h2></center>
- <h2 align="center">Public Key Infrastructure Usage</h2>
-</p>
-  <p align="center">
-<img alt="Tests Passing" src="https://github.com/Ramjan0487/github-readme-stats/workflows/Test/badge.svg" style="max-width: 100%;">
-    </a>
-    <a href="https://github.com/Ramjan0487/github-readme-stats/graphs/contributors">
-      <img alt="GitHub Contributors" src="https://img.shields.io/github/contributors/Ramjan0487/github-readme-stats" />
-    </a>
-    <a href="https://codecov.io/gh/Ramjan0487/github-readme-stats">
-      <img alt="Tests Coverage" src="https://codecov.io/gh/Ramjan0487/github-readme-stats/branch/master/graph/badge.svg" />
-    </a>
-    <a href="https://github.com/Ramjan0487/github-readme-stats/issues">
-      <img alt="Issues" src="https://img.shields.io/github/issues/Ramjan0487/github-readme-stats?color=0088ff" />
-    </a>
-    <a href="https://github.com/Ramjan0487/github-readme-stats/pulls">
-      <img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/Ramjan0487/github-readme-stats?color=0088ff"/>
-    </a>
-  </p>
+- **mTLS PKI login** — client certificate + password authentication via Nginx
+- **AI face detection** — OpenCV + MediaPipe: blur, brightness, face presence, eyes, ears, occlusion
+- **Email notifications** — SMTP + Jinja2 HTML templates on reject/accept/NID update
+- **National ID update flow** — confirmed after photo accepted, with audit trail
+- **TestOps dashboard** — live Prometheus metrics, Chart.js charts, health checks, CI pipeline status
+- **GitHub Actions CI/CD** — lint → test (matrix) → security scan → Docker build → smoke test → deploy
 
-  ##⚡## Features
+---
 
-- 🔭 Image clarity detection
-- 🌱 Ear visibility detection
-- 👯 Fraud detection
-- 🤔 Face orientation validation
-- 💬 Clear Image and Photo Control
+## Problem
 
-<img align="right" width="370" height="290" src="https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExeHpqbzVubXQxemMwcWpoaTVpZWdzdXNhNm03d3VqZ2E3bzhleGZtNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qgQUggAC3Pfv687qPC/giphy.gif">
+The GovCA portal accepts passport photos at upload time with zero automated validation. Blurry, dark, or biometrically defective photos are only rejected during manual review 1–5 business days later. Users receive no feedback, causing abandonment, repeated bad submissions, and helpdesk overload.
 
-  ###⚡What we Do:
-- Web,Mobile, App Testing using Manual Testing
-- Test planning
-- Unit testing
-- Compatibility testing
-- Exploratory testing
-- Functional testing
-- Test execution
-- Accessibility testing
-- Black box testing
-- Defect logging
-  
-### 🖥️ I Code In
-<p>
-  <img height="50" src="https://img.icons8.com/color/48/000000/python.png"/>
-  <img height="50" src="https://img.icons8.com/color/48/000000/c-programming.png"/>
-  <img height="50" src="https://img.icons8.com/color/48/000000/c-plus-plus-logo.png"/>
-  <img height="50" src="https://img.icons8.com/color/48/000000/javascript.png"/>
-  <img height="50" src="https://img.icons8.com/color/48/000000/nodejs.png"/>
-  <img height="50" src="https://img.icons8.com/color/48/000000/react-native.png"/>
-  <img height="50" src="https://img.icons8.com/color/48/000000/html-5.png"/>
-  <img height="50" src="https://img.icons8.com/color/48/000000/css3.png"/>
-  <img height="50" src="https://img.icons8.com/color/48/000000/bootstrap.png"/>
-  <img height="50" src="https://img.icons8.com/color/48/000000/mysql-logo.png"/>
-  <img height="50" src="https://img.icons8.com/color/48/000000/mongodb.png"/>
-</p>
+---
 
-  ###⚡Other Tasks:
-          
- - Risk analysis
- - Failure analysis
- - Test Plan Documentation
- - Test Cases Documentation
- - Report the results Requirement analysis
-  
-### 📈 My GitHub Activity
+## Solution
 
-[![Ntambara Rukaka Steven's github activity graph](https://github-readme-activity-graph.vercel.app/graph?username=Ramjan0487&bg_color=150a10&color=ffffff&line=f5f5f5&point=ffffff&area=true&hide_border=true)](https://github.com/ashutosh00710/github-readme-activity-graph)
+A middleware service integrated at the photo upload step that:
+1. Validates image quality instantly (< 2 seconds)
+2. Detects face, eyes, ears, and occlusion with MediaPipe landmarks
+3. Sends a structured HTML email within 60 seconds of rejection
+4. On acceptance, prompts NID update and confirms by email
+5. Exposes a live TestOps dashboard with Prometheus metrics
 
- ### Fun fact: I love simplifying complex tech topics on my youtube channel
+---
 
-  <p align="left">
-    <img src="https://img.shields.io/youtube/channel/subscribers/UCRRty8f2l3sZ411uKi2DnLQ?style=for-the-badge" alt="YouTube Subscribers">
-    &nbsp;&nbsp;&nbsp;
-    <img src="https://img.shields.io/youtube/channel/views/UCRRty8f2l3sZ411uKi2DnLQ?style=for-the-badge" alt="YouTube Views">
-  </p>
-   ### 🚀 Social Presence
-   
-- [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ntambara-rukaka-steven)  
-- [![Instagram](https://img.shields.io/badge/Instagram-d62976?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/ntambararukaka)  
-- [![Twitter](https://img.shields.io/badge/X%2FTwitter-white?logo=x&style=flat&logoColor=white)](https://x.com/Rickiesteven)  
-- [![Facebook](https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white)](https://www.facebook.com/stevio052002)  
+## How To Run
 
-##⚡What we Do:
-Tools Like Katalon Testing Tools
+### 1. Clone & setup
 
-1.Katalon Studio: This is the core testing tool, an all-in-one low-code automation platform for web, API, desktop, and mobile applications. 
-2.Katalon TestOps: This AI-augmented platform provides comprehensive test management and quality intelligence. 
-3.Katalon Runtime Engine (KRE): A command-line execution add-on for executing tests in a CI/CD pipeline or for silent, headless execution.
+```bash
+git clone https://github.com/your-org/govca-full.git
+cd govca-full
+cp .env.example .env
+# Edit .env with your credentials
+```
 
- ### ⚙️ Tools I Use
-<p>
-  <img height="50" src="https://upload.wikimedia.org/wikipedia/commons/0/00/Katalon-logo-png.png"/>
-  <img height="50" src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fseeklogo.com%2Fvector-logo%2F319201%2Fselenium&ved=0CBYQjRxqFwoTCOCi79-UqpMDFQAAAAAdAAAAABAI&opi=89978449.png"/>
-  <img height="50" src="https://www.google.com/imgres?q=github%20logo&imgurl=https%3A%2F%2Fcdn-icons-png.flaticon.com%2F256%2F25%2F25231.png&imgrefurl=https%3A%2F%2Fwww.flaticon.com%2Ffree-icon%2Fgithub-logo_25231&docid=kHlC0fHCgyWhTM&tbnid=P12DMiIC8KNvzM&vet=12ahUKEwjhjKr9lKqTAxVoK_sDHZn4IBEQnPAOegQIHBAB..i&w=256&h=256&hcb=2&ved=2ahUKEwjhjKr9lKqTAxVoK_sDHZn4IBEQnPAOegQIHBAB.png"/>
-  <img height="50" src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2Fvh-info.com%2F2025%2F08%2F21%2Fga4-logo%2F&ved=0CBYQjRxqFwoTCICW3dmVqpMDFQAAAAAdAAAAABAI&opi=89978449.png"/>
-<img height="50" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRidwGaIWGYMToqhXd1dypaGDsEdPhhbbAz4Q&s"/>
-</p>
+### 2. Generate mTLS certificates
 
-## The Selenium project The primary tools in the suite are: 
+```bash
+bash scripts/gen_certs.sh certs
+# Import certs/client/client.p12 into your browser (password: govca2024)
+```
 
-1.Selenium WebDriver: This provides a programming interface to create robust, browser-based regression automation suites
-2.Selenium IDE: A simple record-and-playback tool, available as an extension for Chrome, Firefox, and Edge browsers. 
-3.Selenium Grid: This tool allows you to scale your automation by distributing and running tests on several different machines
+### 3. Start all services
 
-  ###  💻 Workspace Setup:
+```bash
+docker compose up -d
+```
 
-- **Operating System**: Windows 10
-  ![OS](https://img.shields.io/badge/OS-Windows_10-blue?style=for-the-badge&logo=windows&logoColor=white)
-- **Operating System**: Windows 11
-  ![OS](https://img.shields.io/badge/OS-Windows_11-blue?style=for-the-badge&logo=windows&logoColor=white)
-- **Operating System**: Mac OS
-  ![MacOS]<img height="40" src="https://img.icons8.com/?size=96&id=vCiwbOh7Uo7G&format=png"/>
-- **Operating System**: Linux
-  ![Linux]<img height="40" src="https://www.google.com/url?sa=t&source=web&rct=j&url=https%3A%2F%2F1000logos.net%2Flinux-logo%2F&ved=0CBYQjRxqFwoTCOjfubeUqpMDFQAAAAAdAAAAABAH&opi=89978449.png"/>
-- **Processor**: AMD Ryzen 5 5600H
-  ![CPU](https://img.shields.io/badge/AMD-Ryzen_5_5600H-ED1C24?style=for-the-badge&logo=amd&logoColor=white)
-- **Graphics**: AMD Radeon RX 6500M
-  ![GPU](https://img.shields.io/badge/AMD-Radeon_RX_6500M-ED1C24?style=for-the-badge&logo=amd&logoColor=white)
+Services started:
+| Service | URL |
+|---------|-----|
+| App (via Nginx) | https://localhost |
+| Login | https://localhost/auth/login |
+| Upload | https://localhost/upload/ |
+| TestOps Dashboard | https://localhost/dashboard/ |
+| Prometheus | http://localhost:9090 |
+| Grafana | http://localhost:3000 (admin / govca2024) |
 
-  ## Author
-NTAMBARA RUKAKA Steven
+### 4. Run tests
+
+```bash
+# All tests
+pytest tests/ -v --cov=app
+
+# Unit only
+pytest tests/unit/ -v
+
+# Integration only
+pytest tests/integration/ -v
+
+# E2E flow
+pytest tests/e2e/ -v
+```
+
+### 5. Create first admin user
+
+```bash
+docker compose exec app flask shell
+>>> from app import db
+>>> from app.models import User
+>>> from werkzeug.security import generate_password_hash
+>>> u = User(national_id="1199780000000001", email="admin@govca.rw",
+...          password_hash=generate_password_hash("Admin1234!"), full_name="Admin")
+>>> db.session.add(u); db.session.commit()
+```
+
+---
+
+## Application Flow
+
+```
+User                  Nginx (mTLS)          Flask App             Email
+ |                        |                     |                    |
+ |--- HTTPS + cert ------->|                     |                    |
+ |                        |-- verify cert ------>|                    |
+ |                        |-- forward headers -->|                    |
+ |<-- login OK (session) --|<--- 200 + token -----|                    |
+ |                        |                     |                    |
+ |--- upload photo ------->|--- POST /submit ---->|                    |
+ |                        |               [OpenCV checks]            |
+ |                        |            [MediaPipe detection]         |
+ |                        |                     |                    |
+ |  (if rejected)         |                     |-- send rejection -->|
+ |<-- 422 + defect code --|<-- rejected ---------|                    |
+ |                        |                     |   [HTML email]     |
+ |                        |                     |                    |
+ |  (if accepted)         |                     |-- send accepted --->|
+ |<-- 200 + proceed URL --|<-- accepted ---------|                    |
+ |                        |                     |                    |
+ |--- update NID -------->|--- POST /nid/confirm>|                    |
+ |                        |               [update DB]               |
+ |<-- complete ------------|<--- 200 -----------|-- NID updated ----->|
+```
+
+---
+
+## Project Structure
+
+```
+govca-full/
+├── app/
+│   ├── __init__.py              # App factory + Prometheus metrics
+│   ├── config.py                # Dev / Prod / Test configs
+│   ├── models/__init__.py       # User, Application, ImageCheck, AuditLog
+│   ├── routes/
+│   │   ├── auth.py              # UC-01: mTLS + password login, register, logout
+│   │   ├── upload.py            # UC-02: image upload + AI detection pipeline
+│   │   ├── nid.py               # NID update, cancel application
+│   │   └── dashboard.py         # TestOps: live metrics, health, activity feed
+│   ├── services/
+│   │   ├── face_detection.py    # OpenCV + MediaPipe: 5 sequential checks
+│   │   └── email_service.py     # Celery tasks + Flask-Mail + Jinja2 templates
+│   ├── templates/
+│   │   ├── auth/login.html
+│   │   ├── upload/upload.html
+│   │   ├── nid/update.html
+│   │   ├── dashboard/index.html
+│   │   └── email/
+│   │       ├── image_rejected.html
+│   │       ├── image_accepted.html
+│   │       └── nid_updated.html
+│   └── static/
+│       ├── css/main.css
+│       └── js/
+│           ├── login.js
+│           ├── upload.js
+│           └── dashboard.js
+├── tests/
+│   ├── conftest.py
+│   ├── unit/test_face_detection.py
+│   ├── integration/test_routes.py
+│   └── e2e/test_full_flow.py
+├── certs/                       # Generated by scripts/gen_certs.sh
+│   ├── ca/                      # Root CA
+│   ├── server/                  # Server TLS cert
+│   └── client/                  # mTLS client cert (.p12 for browser)
+├── nginx/nginx.conf             # mTLS termination + reverse proxy
+├── scripts/gen_certs.sh         # PKI certificate generation
+├── ci/
+│   └── prometheus.yml           # Prometheus scrape config
+├── .github/workflows/ci.yml     # GitHub Actions: lint→test→security→docker→deploy
+├── docker-compose.yml           # app + nginx + worker + postgres + redis + prometheus + grafana
+├── Dockerfile                   # Multi-stage: builder → production → test
+├── wsgi.py                      # Gunicorn entry point
+├── requirements.txt
+└── .env.example
+```
+
+---
+
+## Environment & Tool Versions
+
+| Tool | Version | Purpose |
+|------|---------|---------|
+| Python | 3.11+ | Runtime |
+| Flask | 3.0.3 | Web framework |
+| OpenCV | 4.9.0 | Image clarity checks |
+| MediaPipe | 0.10.14 | Face/landmark detection |
+| Gunicorn | 22.0.0 | ASGI server |
+| Nginx | 1.25 | mTLS termination + proxy |
+| PostgreSQL | 16 | Production database |
+| Redis | 7 | Celery broker |
+| Celery | 5.3.6 | Async email tasks |
+| Prometheus | 2.51.0 | Metrics collection |
+| Grafana | 10.4.0 | Metrics visualisation |
+| Docker | 25+ | Containerisation |
+| GitHub Actions | — | CI/CD (alternative to Jenkins) |
+
+---
+
+## URLs
+
+| Resource | URL |
+|----------|-----|
+| GovCA Portal | https://www.govca.rw/apply/searchIndvdlProductList.sg |
+| Document Upload | https://www.govca.rw/document/stepIndvdlDocument.sg |
+| Password Reset | https://www.govca.rw/reissue/stepIndvdlReisue.sg |
+| App Status | https://www.govca.rw/indvdl/applyDetails/form/applyInfo.sg |
+| GitHub Repo | https://github.com/your-org/govca-full |
