@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GovCA — Photo Issue</title>
+<style>
+body{font-family:Arial,sans-serif;background:#f5f7fa;margin:0;padding:24px}
+.wrap{max-width:580px;margin:0 auto;background:#fff;border-radius:10px;overflow:hidden;box-shadow:0 2px 10px rgba(0,0,0,.08)}
+.header{background:#004b87;padding:24px 32px;color:#fff}
+.header h1{margin:0;font-size:18px}.header p{margin:4px 0 0;font-size:12px;opacity:.75}
+.body{padding:28px 32px;color:#1a202c;line-height:1.65}
+.alert{background:#fff3cd;border-left:4px solid #f0ad4e;padding:14px 18px;border-radius:4px;margin:18px 0}
+.alert strong{color:#856404;display:block;margin-bottom:4px}
+.alert p{margin:0;font-size:14px;color:#664d03}
+.code{font-family:monospace;font-size:11px;color:#999;margin-top:6px;display:block}
+.reqs{background:#f8f9fa;border-radius:6px;padding:16px 20px;margin:18px 0}
+.reqs h3{margin:0 0 10px;font-size:13px;color:#555}
+.reqs ul{margin:0;padding-left:18px;font-size:13px;color:#444;line-height:1.9}
+.btn-row{margin:24px 0;display:flex;gap:12px;flex-wrap:wrap}
+.btn-primary{background:#004b87;color:#fff!important;text-decoration:none;padding:11px 24px;border-radius:7px;font-weight:600;font-size:14px;display:inline-block}
+.btn-ghost{color:#666!important;text-decoration:underline;font-size:13px;line-height:3;display:inline-block}
+.footer{background:#f5f7fa;padding:18px 32px;font-size:12px;color:#888;border-top:1px solid #eee}
+.footer a{color:#004b87}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="header">
+    <h1>Rwanda National Digital Certification Center</h1>
+    <p>Application Reference: {{ app_ref }}</p>
+  </div>
+  <div class="body">
+    <p>Dear Applicant,</p>
+    <p>We reviewed the photo submitted for your digital certificate application. Unfortunately, it could not be accepted. Please see the issue below and upload a corrected photo to continue.</p>
+
+    <div class="alert">
+      <strong>Photo issue: {{ defect_label }}</strong>
+      <p>{{ defect_message }}</p>
+      <span class="code">Defect code: {{ defect_code }}</span>
+    </div>
+
+    <div class="reqs">
+      <h3>Required photo standards</h3>
+      <ul>
+        <li>Clear and in focus — not blurry or pixelated</li>
+        <li>Well lit — no overexposure or dark shadows</li>
+        <li>Eyes fully open, looking directly at the camera</li>
+        <li>Both ears partially visible — no hat or hair covering</li>
+        <li>Full face in frame — no sunglasses, mask, or scarf</li>
+        <li>Plain light-coloured background</li>
+        <li>Minimum size 300 × 300 pixels</li>
+      </ul>
+    </div>
+
+    <div class="btn-row">
+      <a class="btn-primary" href="{{ reupload_url }}">Change Photo</a>
+      <a class="btn-ghost"   href="{{ cancel_url }}">Do not continue</a>
+    </div>
+
+    <p style="font-size:12px;color:#999;margin-top:16px">
+      If you did not submit this application, contact us immediately at
+      <a href="mailto:info@govca.rw">info@govca.rw</a>.
+    </p>
+  </div>
+  <div class="footer">
+    <strong>GovCA — Rwanda National Digital Certification Center</strong><br>
+    Phone: +250 788 315 861 &nbsp;|&nbsp; <a href="mailto:info@govca.rw">info@govca.rw</a> &nbsp;|&nbsp;
+    <a href="https://www.govca.rw">www.govca.rw</a>
+  </div>
+</div>
+</body></html>
